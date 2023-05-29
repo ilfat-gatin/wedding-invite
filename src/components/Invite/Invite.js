@@ -65,14 +65,14 @@ const Invite = () => {
 
     function sendEmail(e) {
         e.preventDefault()
-        // emailjs.sendForm('service_w8i9szg', 'template_ctniyue', formRef.current, 'hPdbqVl2XXXwzEPN_')
-        //     .then(() => {
-        //         setIsOpen(false)
-        //         showSuccessToast()
-        //     }, () => {
-        //         setIsOpen(false)
-        //         showErrorToast()
-        //     })
+        emailjs.sendForm('service_w8i9szg', 'template_ctniyue', formRef.current, 'hPdbqVl2XXXwzEPN_')
+            .then(() => {
+                setIsOpen(false)
+                showSuccessToast()
+            }, () => {
+                setIsOpen(false)
+                showErrorToast()
+            })
     }
 
     function showSuccessToast() {
