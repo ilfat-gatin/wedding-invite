@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Menu from "./components/Menu/Menu";
+import Header from "./components/Header/Header";
+import Invite from "./components/Invite/Invite";
+import Programm from "./components/Progaramm/Programm";
+import Questions from "./components/Questions/Questions";
+import Ceremony from "./components/Ceremony/Ceremony";
+import Banket from "./components/Banket/Banket";
+import Footer from "./components/Footer/Footer";
+import Timer from "./components/Timer/Timer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Menu />
+        <Header />
+        <Timer />
+        <Invite />
+        <Programm />
+        <Questions />
+        <Ceremony />
+        <Banket />
+        <Footer />
     </div>
   );
 }
