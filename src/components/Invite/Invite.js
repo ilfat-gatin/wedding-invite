@@ -10,22 +10,34 @@ import Modal from 'react-modal';
 Modal.setAppElement('#root')
 Modal.defaultStyles.overlay.backgroundColor = '#ffffffe6'
 
-const customStyles = {
-    content: {
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)',
-    },
-};
 
 const Invite = () => {
     const [isApproved, setIsApproved] = React.useState(false)
     const [modalIsOpen, setIsOpen] = React.useState(false);
+    const [width, setWidth] = React.useState(document.documentElement.clientWidth);
     const formRef = React.useRef()
     let subtitle;
+
+    const customStyles = {
+        content: {
+            top: '50%',
+            left: '50%',
+            right: 'auto',
+            bottom: 'auto',
+            marginRight: '-50%',
+            transform: 'translate(-50%, -50%)',
+            height: width < 600 ? "100%" : "",
+            width: width < 600 ? "100%" : ""
+        },
+    };
+
+    React.useEffect(() => {
+        window.addEventListener("resize", () => {
+            setWidth(document.documentElement.clientWidth)
+        })
+    }, [])
+
+    console.log(document.documentElement.clientWidth)
 
     function handleApprove() {
         setIsApproved(true);

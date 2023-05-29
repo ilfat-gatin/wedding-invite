@@ -42,6 +42,7 @@
     transition: 0.3s;
     font-size: 20px;
     cursor: pointer;
+    color: black;
 }
 
 .DeclineBtn {
@@ -55,6 +56,7 @@
     transition: 0.3s;
     font-size: 20px;
     cursor: pointer;
+    color: black;
 }
 
 .ApproveBtn:hover {
@@ -71,6 +73,7 @@
     position: relative;
     padding: 0 20px;
     width: 400px;
+    height: 100%;
 }
 
 .CloseBtn {
@@ -107,6 +110,7 @@
     margin-top: 10px;
     border: 1px solid black;
     border-radius: 5px;
+    color: black;
 }
 
 .Flex {
@@ -126,7 +130,7 @@
 
 .Textarea {
     padding: 10px;
-    height: 200px;
+    height: 100px;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -153,6 +157,9 @@
     .Root {
         padding: 50px 0 35px;
     }
+    .ModalContent {
+        padding-top: 30px;
+    }
 }
 
 @media(max-width: 630px) {
@@ -176,6 +183,9 @@
     .DeclineBtn, .ApproveBtn {
         padding: 15px;
         font-size: 16px;
+    }
+    .ModalContent h2 {
+        font-size: 24px;
     }
 }
 
