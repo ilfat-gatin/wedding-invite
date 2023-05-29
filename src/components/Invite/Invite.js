@@ -65,14 +65,14 @@ const Invite = () => {
 
     function sendEmail(e) {
         e.preventDefault()
-        emailjs.sendForm('service_w8i9szg', 'template_ctniyue', formRef.current, 'hPdbqVl2XXXwzEPN_')
-            .then(() => {
-                setIsOpen(false)
-                showSuccessToast()
-            }, () => {
-                setIsOpen(false)
-                showErrorToast()
-            })
+        // emailjs.sendForm('service_w8i9szg', 'template_ctniyue', formRef.current, 'hPdbqVl2XXXwzEPN_')
+        //     .then(() => {
+        //         setIsOpen(false)
+        //         showSuccessToast()
+        //     }, () => {
+        //         setIsOpen(false)
+        //         showErrorToast()
+        //     })
     }
 
     function showSuccessToast() {
@@ -110,12 +110,12 @@ const Invite = () => {
                         {isApproved && <div>
                             <div className={styles.InputWrapper}>
                                 <label htmlFor="name">Ваше имя</label>
-                                <input name="name" type='text' id='name' placeholder='Ваше имя'
+                                <input required name="name" type='text' id='name' placeholder='Ваше имя'
                                        className={styles.Input}/>
                             </div>
                             <div className={styles.InputWrapper}>
                                 <label htmlFor="count">Количество персон</label>
-                                <select name="count" id="count" className={styles.Input}>
+                                <select required name="count" id="count" className={styles.Input}>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
