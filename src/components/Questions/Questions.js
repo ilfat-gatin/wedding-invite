@@ -8,7 +8,7 @@ const Questions = () => {
                 <h1 className={styles.Title}>Отвечаем на ваши вопросы</h1>
 
                 <p className={styles.Question}>Будет ли дресс-код?</p>
-                <p className={styles.Answer}>Для нас самое главное - ваше присутствие! Но мы будем рады, если девушки выберут вечерние или коктейльные платья в розово-бежевых оттенках, а мужчины — костюм.</p>
+                <p className={styles.Answer}>Для нас самое главное - ваше присутствие! Но мы будем рады, если девушки выберут вечерние или коктейльные платья в розово-бежевых оттенках, а мужчины — костюм в любых оттенках.</p>
                 <div className={styles.Colors}>
                     <div className={`${styles.Color} ${styles.Color1}`}></div>
                     <div className={`${styles.Color} ${styles.Color2}`}></div>

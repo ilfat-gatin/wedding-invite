@@ -37,8 +37,6 @@ const Invite = () => {
         })
     }, [])
 
-    console.log(document.documentElement.clientWidth)
-
     function handleApprove() {
         setIsApproved(true);
         openModal()
